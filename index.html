@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Landing-event</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href='style.css' rel='stylesheet' type='text/css'>
-
+	<script src="countdown.js"></script>
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-	
 	<header>
-		<h2>your logo</h2>
-		<!--		<Img src="" alt="YOUR LOGO">-->
+		<span class="logo" style="font-size: 25px; text-transform: uppercase;">your logo</span>
 		<nav>
 			<ul>
-				<li class="button">home</li>
-				<li class="button">pages</li>
-				<li class="button">shortcodes</li>
-				<li class="button">blog</li>
-				<li class="button">portfolio</li>
-				<li class="button">contact</li>
-				<li class="button">shop</li>
-				<li class="button"><i class="fa fa-search" aria-hidden="true"></i>
-					<!--
-					<form method="get" action="#" name="serchform">
-						<input type="search" name="search" placeholder="">
-<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-				 </form>
--->
-				</li>
+				<li><a href="#">home</a></li>
+				<li><a href="#">pages</a></li>
+				<li><a href="#">shortcodes</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">contact</a></li>
+				<li><a href="#">shop</a></li>
+				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 			</ul>
 		</nav>
 	</header>
-	<section class="slide">
+	<section class="countdown">
 		<h1>start your project</h1>
-		<p>conference event day 2017</p>
+		<p>conference event day 2018</p>
+		<hr>
 		<table>
 			<tr>
 				<td id="days"></td>
@@ -58,60 +50,51 @@
 				<td>secs</td>
 			</tr>
 		</table>
-		<div><a class="button" src="#">take a tour</a>
-			<a class="button" src="#">purchase</a></div>
+		<div>
+			<a href="#">take a tour</a>
+			<a href="#">purchase</a>
+		</div>
 	</section>
-	<section class="about-project">
-		<h2>ABOUT OUR PROJECT</h2>
-		<p>We are here to make your dream comes true by your own way.</p>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim augue.</p>
-		<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis seacula quarta decima decima sollemnes in futurum.</p>
-		<img src="">
+	<section class="about">
+		<div>
+			<h2>ABOUT OUR PROJECT</h2>
+			<hr>
+			<p>We are here to make your dream comes true by your own way.</p>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim augue.</p>
+			<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis seacula quarta decima decima sollemnes in futurum.</p>
+		</div>
 	</section>
+	<section class="stats">
+		<div>
+			<div><i class="fas fa-microphone"></i></div>
+			<h3>time to PROJECT</h3>
+			<p>August 30th 2017 at 7 p.m</p>
+		</div>
+		<div>
+			<div><i class="fas fa-map-marker-alt"></i></div>
+			<h3>event place</h3>
+			<p>Nobinagar Savar,Dhaka</p>
+		</div>
+		<div>
+			<div><i class="fas fa-bullhorn"></i></div>
+			<h3>The speakers</h3>
+			<p>UI/UX All Subject</p>
+		</div>
 
-	<section class="statistics">
-		<ul>
-			<li>
-				<div><i class="fas fa-microphone"></i></div>
+		<div>
+			<div><i class="fas fa-ticket-alt"></i></div>
+			<h3>1000 tickets</h3>
+			<p>Signup to take a place now</p>
+		</div>
 
-
-				<h3>time to PROJECT</h3>
-				<p>August 30th 2017 at 7 p.m</p>
-			</li>
-			<li>
-
-
-				<div><i class="fas fa-map-marker-alt"></i></div>
-				<h3>event place</h3>
-				<p>Nobinagar Savar,Dhaka</p>
-			</li>
-			<li>
-				<div><i class="fas fa-bullhorn"></i></div>
-
-
-
-				<h3>The speakers</h3>
-				<p>UI/UX All Subject</p>
-			</li>
-			<li>
-				<div><i class="fas fa-ticket-alt"></i></div>
-
-
-
-				<h3>1000 tickets</h3>
-				<p>Signup to take a place now</p>
-			</li>
-		</ul>
 	</section>
 	<section class="video">
-		<video poster="img/SEE%20OUR%20PROJECT.png"> <!--		+controls-->
-		
+		<video poster="img/videoholder.png"> <!--		+controls-->
 		<source src="#" type='video/ogg; codecs="theora, vorbis"'>
    <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
    <source src="#" type='video/webm; codecs="vp8, vorbis"'>
 		</video>
 	</section>
-	</div>
 	<section class="brands">
 		<table>
 			<tr>
@@ -126,163 +109,163 @@
 			</tr>
 		</table>
 	</section>
-	<section class="member">
-		<h2>our member</h2>
-		<div><figure class="test"><img src="img/members/1.png">
+	<section class="speakers">
+	<h2>our member</h2>
+	<hr>
+		<div>
+		<figure><img src="img/members/1.png">
 			<figurecaption>
-				<h3>MASUD RANA</h3>
+				<h3> not MASUD RANA</h3>
 				<p>CEO from Managment</p>
-				<a src=""><i class="fab fa-facebook-f"></i></a>
-					<a src=""><i class="fab fa-twitter"></i></a>
-					<a src=""><i class="fab fa-instagram"></i></a>
-					<a src=""><i class="fab fa-dribbble"></i></a>
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-dribbble"></i></a>
 					</figurecaption>
 					</figure>
 					<figure><img src="img/members/2.png">
 						<figurecaption>
 							<h3>MASUD RANA</h3>
 							<p>CEO from Managment</p>
-							<a src=""><i class="fab fa-facebook-f"></i></a>
-							<a src=""><i class="fab fa-twitter"></i></a>
-							<a src=""><i class="fab fa-instagram"></i></a>
-							<a src=""><i class="fab fa-dribbble"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-dribbble"></i></a>
 						</figurecaption>
 					</figure>
 					<figure><img src="img/members/3.png">
 						<figurecaption>
-							<h3>MASUD RANA</h3>
+							<h3>MASUD RANA's friend</h3>
 							<p>CEO from Managment</p>
-							<a src=""><i class="fab fa-facebook-f"></i></a>
-							<a src=""><i class="fab fa-twitter"></i></a>
-							<a src=""><i class="fab fa-instagram"></i></a>
-							<a src=""><i class="fab fa-dribbble"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-dribbble"></i></a>
 						</figurecaption>
 					</figure>
 					</div>
 	</section>
 
-	<section class="schedule">
+	<section class="schedule ">
 		<h2>progect schedule</h2>
+		<hr>
 		<nav>
 			<a href="#">day 1</a>
 			<a href="#">day 2</a>
 			<a Href="#">day 3</a>
 		</nav>
+		<div class="centerline_cont">
+			<div class="centerline"></div>
+		</div>
 		<div class="secondday">
+			<div class="speaker"><img src="img/shedule/shedule1sm.png"></div>
 			<article>
-				<div class="speaker"><img src="img/shedule/shedule1sm.png" alt="speaker"></div>
+				<div class="time"><span>7 PM - 8 PM</span></div>
+				<figure>
+					<img src="img/shedule/shedule1.png" alt="presentation slide">
+					<figcaption>
+						<h3>3 steps to start a start-up company</h3>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
+					</figcaption>
+				</figure>
+		</div>
+		</article>
+		<div class="speaker"><img src="img/shedule/shedule2sm.png" </div>
+			<article>
+				<div class="time"><span>8 PM - 9 PM</span></div>
+				<figure>
+					<img src="img/shedule/shedule2.png">
+
+					<figcaption>
+						<h3>some tip for your trouble</h3>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
+					</figcaption>
+				</figure>
+			</article>
+			<div class="speaker"><img src="img/shedule/shedule3sm.png"></div>
+
+			<article>
+
 				<div class="article">
-					<div class="time"><span>7 PM - 8 PM</span></div>
+					<div class="time"><span>9 PM - 10 PM</span></div>
 					<figure>
-						<img src="img/shedule/shedule1.png" alt="presentation slide">
+						<img src="img/shedule/shedule3.png">
 						<figcaption>
-							<h4>3 steps to start a start-up company</h4>
+							<h3>how to connect people</h3>
 							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
 						</figcaption>
 					</figure>
 				</div>
 			</article>
-
-			<article>
-				<div class="speaker"><img src="img/shedule/shedule2sm.png" <div class="time"><span>8 PM - 9 PM</span></div>
-				<figure>
-					<img src="img/shedule/shedule2.png" alt="presentation slide">
-					<figcaption>
-						<h4>some tip for your trouble</h4>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-					</figcaption>
-				</figure>
 		</div>
-		</article>
-
-		<article>
-			<div class="speaker"><img src="img/shedule/shedule3sm.png" alt="speaker"></div>
-			<div class="article">
-				<div class="time"><span>9 PM - 10 PM</span></div>
-				<figure>
-					<img src="img/shedule/shedule3.png" alt="presentation slide">
-					<figcaption>
-						<h4>how to connect people</h4>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-					</figcaption>
-				</figure>
-			</div>
-		</article>
-
-
-		</div>
-		<ul>
-			<li>
-
-
-
-			</li>
-		</ul>
 	</section>
-	-->
 	<section class="purchase">
-
 		<p>hurry up. the ticket is free with limitted amount!!!</p>
-
 		<a href="">signup now</a>
-
 	</section>
-
-	<section class="blog">
+	<section class="blog ">
 		<h2>OUR BLOG</h2>
+		<hr>
+		<div class="blog_cont">
+			<div>
+				<article>
+					<figure>
+						<a href="#"><img src="img/blog.png" alt=" foto"></a>
+						<figcaption>
+							<span><time pubtime="2015-11-20"><i class="far fa-clock"></i>Nov 20th 2015 </time>| <i class="fa fa-user" aria-hidden="true"></i>Masud Rana</span>
+							<h3>we are back. nice to see you soon</h3>
+							<p style="width:370px">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+						</figcaption>
+					</figure>
 
-		<div>
-			<article>
-				<figure>
-					<a href="#"><img src="img/blog.png" alt=" foto"></a>
-					<figcaption>
-						<span><time pubtime="2015-11-20"><i class="far fa-clock"></i>Nov 20th 2015 </time> <i class="fa fa-user" aria-hidden="true"></i>Masud Rana</span>
-						<h3>we are back. nice to see you soon</h3>
-					</figcaption>
-				</figure>
+				</article>
+			</div>
+			<div>
+				<article>
+					<div>
+						<figure>
+							<a href="#"><img src="img/blog.png" alt=" foto"></a>
+							<figcaption>
+								<span><time pubtime="2015-11-20"><i class="far fa-clock"></i>Nov 20th 2015 </time> |<i class="fa fa-user" aria-hidden="true"></i>Masud Rana</span>
+								<h3>we are back. nice to see you soon</h3>
+								<p style="width:370px">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+							</figcaption>
+						</figure>
 
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-			</article>
-			<article>
-				<figure>
-					<a href="#"><img src="img/blog.png" alt=" foto"></a>
-					<figcaption>
-						<span><time pubtime="2015-11-20"><i class="far fa-clock"></i>Nov 20th 2015 </time> <i class="fa fa-user" aria-hidden="true"></i>Masud Rana</span>
-						<h3>we are back. nice to see you soon</h3>
-					</figcaption>
-				</figure>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-			</article>
-			<article>
-				<figure>
-					<a href="#"><img src="img/blog.png" alt=" foto"></a>
-					<figcaption>
-						<span><time pubtime="2015-11-20"><i class="far fa-clock"></i>Nov 20th 2015 </time> <i class="fa fa-user" aria-hidden="true"></i>Masud Rana</span>
-						<h3>we are back. nice to see you soon</h3>
-					</figcaption>
-				</figure>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-			</article>
-		</div>
+				</article>
+				</div>
+				<div>
+					<article>
+						<figure>
+							<a href="#"><img src="img/blog.png" alt=" foto"></a>
+							<figcaption>
+								<span><time pubtime="2015-11-20"><i class="far fa-clock"></i>Nov 20th 2015 </time> |<i class="fa fa-user" aria-hidden="true"></i>Masud Rana</span>
+								<h3>we are back. nice to see you soon</h3>
+								<p style="width:370px">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+							</figcaption>
+						</figure>
+
+					</article>
+				</div>
+			</div>
 	</section>
-
 	<section class="book">
 		<div>
 			<h2>BOOK A SEET NOW</h2>
-			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that i</div>
-			<form action="/example/handler.php" method="post">
+			<hr>
+			<p style="width:550px">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that i</p>
+			<form action="#" method="post">
 				<p><input id="name" type="text" name="name" placeholder="Your name*">
-					<input id="mail" type="email" name="email" placeholder="Your email*"></p>
+					<input id="email" type="email" name="email" placeholder="Your email*"></p>
 				<p> <input id="subject" type="text" name="subject" placeholder="Subject*"></p>
-				<p> <textarea rows="10" cols="45" placeholder="Message*"></textarea></p>
-				<p><button id="submit" type="submit" class="button buthov">SEND MESSAGE </button></p>
+				<p> <textarea rows="10" placeholder="Message*"></textarea></p>
+				<p><button id="submit" type="submit">SEND MESSAGE </button></p>
 			</form>
 		</div>
 	</section>
 	<section class="map">
 		<img src="img/MAPS.png">
 	</section>
-
 	<footer>
 		<nav>
 			<div>
@@ -327,43 +310,18 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="copyright">
-			<p>All Right Reserved. Designed by Masud Rana</p>
-			<ul>
-				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-			</ul>
-		</div>
 	</footer>
+	<section class="copyright">
+		<p>All Right Reserved. Designed by Masud Rana</p>
+		<ul>
+			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+			<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+	</section>
+
 </body>
-
-
-
-<script>
-	var counDownDate = new Date("August 2, 2018 00:00:00").getTime();
-	var x = setInterval(function() {
-		var now = new Date().getTime();
-		var distance = counDownDate - now;
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var secs = Math.floor((distance % (1000 * 60)) / 1000);
-		document.getElementById("days").innerHTML = days;
-		document.getElementById("hours").innerHTML = hours;
-		document.getElementById("mins").innerHTML = mins;
-		document.getElementById("secs").innerHTML = secs;
-		if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("days").innerHTML = "00";
-			document.getElementById("hours").innerHTML = "00";
-			document.getElementById("mins").innerHTML = "00";
-			document.getElementById("secs").innerHTML = "00";
-		}
-	}, 1000);
-
-</script>
 
 </html>
