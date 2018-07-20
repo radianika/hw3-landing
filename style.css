@@ -236,13 +236,15 @@ video {
 /*		speakers*/
 
 .speakers {
-	align-items: center;
+	box-sizing: border-box;
 	justify-content: center;
 	flex-direction: column;
 	background-color: #343131;
 	padding-top: 110px;
 	padding-bottom: 200px;
-	padding-right: 100px;
+	width: 100%;
+	text-align: center;
+
 }
 
 .speakers h2,
@@ -263,30 +265,40 @@ video {
 .speakers div {
 	margin-top: 52px;
 	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
 .speakers figure {
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
+	flex: 0 0 20%;
+	box-sizing: border-box;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
-}
-
-.speakers figure:last-of-type {
 	-webkit-margin-end: 0;
+	position: relative;
 }
 
 .speakers figurecaption {
 	box-sizing: border-box;
+
+	position: absolute;
+	padding-top: 75%;
+	padding-left: 5%;
+	padding-bottom: -5px;
+	left: 0;
+	top: 0;
+	margin-bottom: -3px;
 	width: 100%;
 	height: 100%;
-	padding: 270px 20px 30px 30px;
-	position: absolute;
+	text-align: left;
 	z-index: 2;
-	left: 0;
-	bottom: 0;
+
 	background-color: rgba(0, 0, 0, .5);
-	transition: all .3s linear;
+	/*	transition: all .3s linear;*/
 	opacity: 0;
 	visibility: hidden;
 }
@@ -298,6 +310,90 @@ video {
 
 .speakers figure:hover a:hover {
 	color: #03a9f4;
+}
+
+/* schedule*/
+
+.schedule {
+	padding-bottom: 125px;
+	background-color: #f8f8f8;
+}
+
+.schedule a {
+	display: inline-block;
+	border: 2px solid #eaeaea;
+	padding: 15px 30px;
+	color: #000;
+}
+
+.schedule a:hover {
+	color: #fff;
+	background-color: #03a9f4;
+	border-color: #03a9f4;
+}
+
+div#timeline {
+	width: 80%;
+	padding: 20px 100px;
+	position: relative;
+}
+
+div#timeline:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin: 0 0 0 -1px;
+	width: 2px;
+	height: 100%;
+	z-index: 2;
+	background: #eaeaea;
+}
+
+div#timeline article {
+	width: 96%;
+	height: auto;
+	margin: 0 0 20px 0;
+	position: relative;
+}
+
+div#timeline article img {
+	width: 100%;
+	height: auto;
+}
+
+div#timeline article:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+div#timeline article div.inner {
+	width: 40%;
+	float: left;
+	margin: 5px 0 0 0;
+	border-radius: 6px;
+}
+
+div#timeline article div.inner div.speak {
+	width: 80%;
+	max-width: 100px;
+	height: auto;
+	position: absolute;
+	top: 27%;
+	left: 47%;
+	z-index: 3;
+
+}
+
+div#timeline article div.inner div.speak img {
+	width: 100%;
+	height: auto;
+}
+
+div#timeline article:nth-child(2n) div.inner {
+	float: right;
 }
 
 /*		purchase*/
@@ -323,6 +419,8 @@ video {
 	color: #FFFFFF;
 	padding: 15px 40px;
 }
+
+
 
 
 /*		blog */
@@ -386,15 +484,15 @@ video {
 
 /*		book*/
 
-section .book {
+section.book {
 	background-color: #f8f8f8;
 	color: #999999;
 	font-size: 13pt;
-	display: flex;
+	justify-content: flex-end;
 	padding-top: 120px;
 	padding-bottom: 60px;
-	padding-left: 570px;
 	background: url("img/image.png") no-repeat 0 0;
+	margin-bottom: -2px;
 }
 
 .book hr {
@@ -443,15 +541,19 @@ textarea {
 /*		map*/
 
 .map {
+	width: auto;
+	height: auto;
 	margin: 0;
 	padding: 0;
 }
 
+/*
 .map img {
 	width: 100%;
-	height: 515px;
+	height: ;
 	margin-bottom: -5px;
 }
+*/
 
 
 
@@ -578,8 +680,6 @@ footer button {
 }
 
 .schedule article {
-	width: 550px;
-	background: #fff;
 	color: #666;
 }
 
