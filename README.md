@@ -4,8 +4,8 @@
 
 *добавить @_media_
 
-*починить ```<section class="book">```
+*~~починить ```<section class="book">```~~
 
-*сделать _**timeline**_
+*~~сделать _**timeline**_~~
 
 [Йа ссылка](https://radianika.github.io/hw3-landing/)
