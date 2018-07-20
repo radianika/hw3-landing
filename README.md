@@ -1,9 +1,10 @@
 # hw3-landing
 ## Почти свеёрастанный сайт
 Надо бы:
-*добавить @ media
 
-*починить <section class=" book ">
+*добавить @_media_
+
+*починить ```<section class="book">```
 
 *сделать _**timeline**_
 
