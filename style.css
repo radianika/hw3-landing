@@ -1,6 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
+	padding: 0;
 }
 
 h1 {
@@ -315,10 +316,20 @@ video {
 /* schedule*/
 
 .schedule {
-	padding-bottom: 125px;
+	padding-bottom: 123px;
+	padding-top: 120px;
 	background-color: #f8f8f8;
+			flex-direction: column;
+			align-items: center;
+			box-sizing: border-box;
 }
-
+.schedule h2{
+	margin: 0;
+}
+.schedule hr{
+	margin-bottom:60px;
+	margin-top: 25px;
+}
 .schedule a {
 	display: inline-block;
 	border: 2px solid #eaeaea;
@@ -332,69 +343,114 @@ video {
 	border-color: #03a9f4;
 }
 
-div#timeline {
-	width: 80%;
-	padding: 20px 100px;
-	position: relative;
-}
+.timeline-box {
+			position: relative;
+			box-sizing: border-box;
+	padding-bottom: 70px;
+	padding-top: 80px;
+		}
 
-div#timeline:before {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 50%;
-	top: 0;
-	margin: 0 0 0 -1px;
-	width: 2px;
-	height: 100%;
-	z-index: 2;
-	background: #eaeaea;
-}
+		.tymeline::before {
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 100%;
+			left: 50%;
+			top: 0;
+			margin-left: -1px;
+			background: #eaeaea;
+		}
 
-div#timeline article {
-	width: 96%;
-	height: auto;
-	margin: 0 0 20px 0;
-	position: relative;
-}
+		.article-box {
+			width: 50%;
+			position: relative;
+		}
 
-div#timeline article img {
-	width: 100%;
-	height: auto;
-}
+		.article-box:nth-of-type(even) {
+			transform: translateX(100%);
+			display: flex;
+			justify-content: flex-end;
+		}
 
-div#timeline article:after {
-	content: '';
-	display: block;
-	clear: both;
-}
+		article {
+			position: relative;
+			box-sizing: border-box;
+			overflow: hidden;
+			background-color: #fff;
+			padding: 20px;
+			width: 80%;
+		}
 
-div#timeline article div.inner {
-	width: 40%;
-	float: left;
-	margin: 5px 0 0 0;
-	border-radius: 6px;
-}
+		.time {
+			background-color: #03a9f4;
+			color:#fff;
+			padding: 5px;
+			top: 30px;
+			left: -35px;
+			width: 150px;
+			text-align: center;
+			position: absolute;
+			transform: rotate(-45deg);
+			text-transform: uppercase;
+		}
 
-div#timeline article div.inner div.speak {
-	width: 80%;
-	max-width: 100px;
-	height: auto;
-	position: absolute;
-	top: 27%;
-	left: 47%;
-	z-index: 3;
+		.article-box:nth-of-type(even) .time {
+			left: auto;
+			right: -35px;
+			transform: rotate(45deg);
+		}
 
-}
+		article img {
+			width: 100%;
+		}
 
-div#timeline article div.inner div.speak img {
-	width: 100%;
-	height: auto;
-}
+		.speak {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(50%, -50%);
+		}
 
-div#timeline article:nth-child(2n) div.inner {
-	float: right;
-}
+		.article-box:nth-of-type(even) .speak {
+			right: auto;
+			left: 0;
+			transform: translate(-50%, -50%);
+		}
+
+		.article-box:nth-of-type(even) article {}
+
+		@media (max-width: 767.98px) {
+			section {
+				padding: 10px;
+			}
+			.article-box {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				padding-top: 100px;
+				margin-top: 115px;
+
+			}
+			article {
+				width: 100%;
+			}
+			.speak {
+				top: -7%;
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			.article-box:nth-of-type(even) {
+			transform: translateX(0%);
+			display: block;
+		}
+			.article-box:nth-of-type(even) .speak {
+			top: -7%;
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+		}
+		}
 
 /*		purchase*/
 
@@ -429,6 +485,7 @@ div#timeline article:nth-child(2n) div.inner {
 	flex-direction: column;
 	align-items: center;
 	padding-top: 120px;
+	flex-wrap: nowrap;
 }
 
 .blog div {
@@ -436,7 +493,9 @@ div#timeline article:nth-child(2n) div.inner {
 	font-size: 13px;
 	display: inline-block;
 }
-
+.blog p{
+	width: 30%;
+}
 
 .blog h3 {
 	color: black;
@@ -453,8 +512,10 @@ div#timeline article:nth-child(2n) div.inner {
 	display: flex;
 	flex-direction: column;
 	padding: 0;
-	margin-right: 28px;
-
+	width:100%;
+}
+.blog article img{
+	width:30%;
 }
 
 .blog figure {
@@ -467,6 +528,7 @@ div#timeline article:nth-child(2n) div.inner {
 
 .blog figcaption {
 	border-bottom: 1px #eaeaea solid;
+	width:30%;
 }
 
 .blog span {
