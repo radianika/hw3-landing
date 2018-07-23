@@ -271,19 +271,19 @@ section.brands {
 
 }
 
-.speakers figurecaption p,
-.speakers figurecaption a {
+.speakers figcaption p,
+.speakers figcaption a {
 	font-size: 1vw;
 	font-weight: 200;
 	margin-right: 20px;
 	transition: all .3s linear;
 }
 
-.speakers figurecaption h3 {
+.speakers figcaption h3 {
 	font-size: 1.5vw;
 }
 
-.speakers figurecaption hr {
+.speakers figcaption hr {
 	margin: 0;
 	background-color: #fff;
 	width: 30%;
@@ -313,7 +313,7 @@ section.brands {
 	display: block;
 }
 
-.speakers figurecaption {
+.speakers figcaption {
 	box-sizing: border-box;
 	position: absolute;
 	left: 0;
@@ -330,7 +330,7 @@ section.brands {
 	visibility: hidden;
 }
 
-.speakers figure:hover figurecaption {
+.speakers figure:hover figcaption {
 	opacity: 1;
 	visibility: visible;
 }
@@ -494,7 +494,7 @@ section.brands {
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #fff;
-	font-weight: 600px;
+	font-weight: 600;
 }
 
 .purchase a {
@@ -590,9 +590,7 @@ section.book {
 	font-size: 13pt;
 	justify-content: flex-end;
 	padding-top: 120px;
-	padding-bottom: 60px;
 	background: url("img/image.png") no-repeat 0 0;
-	margin-bottom: -5px;
 }
 
 .book hr {
@@ -636,6 +634,7 @@ textarea {
 .book div{
 	background-color: rgba(255, 255, 255, 0.9);
 	padding: 20px;
+	width:50%;
 }
 /*
  @media (max-width: 1000px){ .book{ background:none; } .book div:first-child { margin-left: 0; } }
